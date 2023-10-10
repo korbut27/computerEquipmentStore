@@ -1,7 +1,7 @@
 package controllers;
 
 import ClientWork.Connect;
-import ComputerEquipmentStore.Equipment;
+import model.Equipment;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;

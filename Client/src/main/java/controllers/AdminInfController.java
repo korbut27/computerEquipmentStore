@@ -1,7 +1,7 @@
 package controllers;
 
 import ClientWork.Connect;
-import ComputerEquipmentStore.Admin;
+import model.Admin;
 import javafx.beans.property.SimpleObjectProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;

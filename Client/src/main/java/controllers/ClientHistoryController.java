@@ -1,8 +1,8 @@
 package controllers;
 
 import ClientWork.Connect;
-import ComputerEquipmentStore.Order;
-import ComputerEquipmentStore.Role;
+import model.Order;
+import model.Role;
 import javafx.beans.property.SimpleObjectProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;

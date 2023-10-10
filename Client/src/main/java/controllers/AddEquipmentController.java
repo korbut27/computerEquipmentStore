@@ -1,8 +1,8 @@
 package controllers;
 
 import ClientWork.Connect;
-import ComputerEquipmentStore.Category;
-import ComputerEquipmentStore.Equipment;
+import model.Category;
+import model.Equipment;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
