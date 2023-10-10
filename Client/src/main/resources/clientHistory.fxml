@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ClientHistoryController">
+    <children>
+        <TableView fx:id="orderTable" layoutX="20.0" layoutY="98.0" prefHeight="294.0" prefWidth="660.0" style="-fx-border-color: #7608AA;">
+            <columns>
+                <TableColumn fx:id="numberColumn" maxWidth="141.33333778381348" prefWidth="91.99999618530273" style="-fx-background-color: #fff; -fx-border-color: #f2f2f2;" text="Номер заказа" />
+                <TableColumn fx:id="contentsColumn" prefWidth="292.7999725341797" style="-fx-background-color: #fff; -fx-border-color: #f2f2f2;" text="Содержимое заказа" />
+                <TableColumn fx:id="priceColumn" prefWidth="119.20001220703125" style="-fx-background-color: #fff; -fx-border-color: #f2f2f2;" text="Стоимость заказа" />
+                <TableColumn fx:id="dateColumn" prefWidth="152.0" style="-fx-background-color: #fff; -fx-border-color: #f2f2f2;" text="Дата регистрации" />
+            </columns>
+        </TableView>
+      <AnchorPane layoutY="437.0" prefHeight="70.0" prefWidth="700.0" style="-fx-background-color: #f5fbff;">
+         <children>
+            <TextField fx:id="number" layoutX="432.0" layoutY="16.0" prefHeight="37.0" prefWidth="136.0" promptText="Номер заказа" style="-fx-background-radius: 20px;" />
+            <Button fx:id="searchButton" layoutX="568.0" layoutY="16.0" mnemonicParsing="false" onAction="#searcOrder" prefHeight="37.0" prefWidth="117.0" style="-fx-background-color: #f5fbff; -fx-border-color: #8942D6; -fx-border-width: 2px; -fx-border-radius: 20px;" text="Найти" textFill="#8942d6">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="backButton" layoutX="21.0" layoutY="16.0" mnemonicParsing="false" onAction="#backToMain" prefHeight="37.0" prefWidth="117.0" style="-fx-background-color: #f5fbff; -fx-border-color: #8942D6; -fx-border-width: 2px; -fx-border-radius: 20px;" text="Назад" textFill="#8942d6">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Label layoutX="21.0" layoutY="7.0" prefHeight="62.0" prefWidth="246.0" text="История покупок" textAlignment="CENTER">
+         <font>
+            <Font name="Arial" size="24.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutY="67.0" prefHeight="3.0" prefWidth="700.0" style="-fx-background-color: #7608AA;" />
+    </children>
+</AnchorPane>

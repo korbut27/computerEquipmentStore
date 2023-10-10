@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ClientInfController">
+    <children>
+        <TableView fx:id="clientTable" layoutX="21.0" layoutY="79.0" prefHeight="309.0" prefWidth="655.0" style="-fx-border-color: #7608AA;">
+            <columns>
+                <TableColumn fx:id="loginColumn" maxWidth="141.33333778381348" prefWidth="81.59997177124023" style="-fx-background-color: #fff; -fx-border-color: #f2f2f2;" text="Логин" />
+                <TableColumn fx:id="firstnameColumn" prefWidth="99.20001220703125" style="-fx-background-color: #fff; -fx-border-color: #f2f2f2;" text="Имя" />
+                <TableColumn fx:id="lastnameColumn" prefWidth="134.40003967285156" style="-fx-background-color: #fff; -fx-border-color: #f2f2f2;" text="Фамилия" />
+                <TableColumn fx:id="orderAmountColumn" prefWidth="150.4000244140625" style="-fx-background-color: #fff; -fx-border-color: #f2f2f2;" text="Количество заказов" />
+                <TableColumn fx:id="totalPaymentColumn" prefWidth="183.20001220703125" style="-fx-background-color: #fff; -fx-border-color: #f2f2f2;" text="Общая стоимоть заказов" />
+            </columns>
+        </TableView>
+      <Label layoutX="20.0" layoutY="5.0" prefHeight="62.0" prefWidth="226.0" text="Список клиентов" textAlignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="-1.0" layoutY="65.0" prefHeight="3.0" prefWidth="700.0" style="-fx-background-color: #7608AA;" />
+      <AnchorPane layoutX="-1.0" layoutY="429.0" prefHeight="70.0" prefWidth="700.0" style="-fx-background-color: #f5fbff;">
+         <children>
+            <Button fx:id="searchButton" layoutX="575.0" layoutY="15.0" mnemonicParsing="false" onAction="#searchclient" prefHeight="37.0" prefWidth="117.0" style="-fx-background-color: #f5fbff; -fx-border-color: #8942D6; -fx-border-width: 2px; -fx-border-radius: 20px;" text="Найти" textFill="#8942d6">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="backButton" layoutX="21.0" layoutY="16.0" mnemonicParsing="false" onAction="#backToMain" prefHeight="37.0" prefWidth="117.0" style="-fx-background-color: #f5fbff; -fx-border-color: #8942D6; -fx-border-width: 2px; -fx-border-radius: 20px;" text="Назад" textFill="#8942d6">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+              <TextField fx:id="login" layoutX="422.0" layoutY="15.0" prefHeight="37.0" prefWidth="136.0" promptText="Логин" style="-fx-background-radius: 20px;" />
+         </children>
+      </AnchorPane>
+    </children>
+</AnchorPane>

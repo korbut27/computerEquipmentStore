@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="510.0" prefWidth="400.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.StatisticWorkController">
+    <children>
+      <AnchorPane layoutY="68.0" prefHeight="3.0" prefWidth="400.0" style="-fx-background-color: #7608AA;" />
+      <AnchorPane layoutY="452.0" prefHeight="58.0" prefWidth="400.0" style="-fx-background-color: #f5fbff;">
+         <children>
+            <Button fx:id="backButton" layoutX="14.0" layoutY="10.0" mnemonicParsing="false" onAction="#backToMain" prefHeight="38.0" prefWidth="100.0" style="-fx-background-color: #f5fbff; -fx-border-color: #8942D6; -fx-border-width: 2px; -fx-border-radius: 20px;" text="Назад" textFill="#8942d6">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="22.0" fitWidth="92.0" layoutX="321.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/logo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="44.0" fitWidth="58.0" layoutX="16.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/report.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="68.0" layoutY="21.0" text="Статистика/отчеты">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="showOrdersButton" layoutX="67.0" layoutY="134.0" mnemonicParsing="false" onAction="#showOrders" prefHeight="55.0" prefWidth="265.0" style="-fx-background-color: #fff; -fx-border-color: #7608AA; -fx-border-radius: 20px; -fx-border-width: 2px;" text="Информация о заказах">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <graphic>
+            <Label prefHeight="35.0" prefWidth="24.0" text="1." textFill="#7608aa">
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font>
+            </Label>
+         </graphic>
+      </Button>
+      <Button fx:id="pieChartButton" layoutX="67.0" layoutY="210.0" mnemonicParsing="false" onAction="#showPieChart" prefHeight="55.0" prefWidth="265.0" style="-fx-background-color: #fff; -fx-border-color: #7608AA; -fx-border-radius: 20px; -fx-border-width: 2px;" text="Столбчатая диграмма">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <graphic>
+            <Label prefHeight="35.0" prefWidth="24.0" text="2." textFill="#7608aa">
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font>
+            </Label>
+         </graphic>
+      </Button>
+    </children>
+</AnchorPane>
